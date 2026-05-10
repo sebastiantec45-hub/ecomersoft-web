@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -6,6 +7,43 @@
   <title>EcomerSoft Belleza · Sistema para Salones</title>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .plan-price {
+      text-align: center;
+      margin: 10px 0 6px;
+    }
+    .plan-price .amount {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1;
+      display: block;
+    }
+    .plan-card.trial .plan-price .amount {
+      color: #69F0AE;
+      font-size: 28px;
+    }
+    .plan-card.full .plan-price .amount {
+      color: var(--primary-lt);
+    }
+    .plan-support {
+      font-size: 11px;
+      color: var(--muted);
+      text-align: center;
+      margin-bottom: 4px;
+      line-height: 1.5;
+    }
+    .plan-support .inc { color: #69F0AE; }
+    .plan-support .note {
+      font-size: 9.5px;
+      color: rgba(144,202,249,.35);
+      font-style: italic;
+      display: block;
+      margin-top: 2px;
+    }
+    .plan-card.full .plan-support { color: #9dd5ce; }
+  </style>
 </head>
 <body>
 
@@ -43,10 +81,11 @@
   <section class="plans-section">
     <div class="section-label"><span>Planes</span></div>
     <h2 class="section-title">Elegí el plan ideal</h2>
-    <p class="section-sub">Todos los planes incluyen el sistema completo. Consultanos por precios y medios de pago.</p>
+    <p class="section-sub">Todos los planes incluyen el sistema completo. Consultanos por formas de pago.</p>
 
     <div class="plans-grid">
 
+      <!-- TRIAL -->
       <div class="plan-card trial">
         <div class="plan-badge free">Gratis</div>
         <div class="plan-icon">🎁</div>
@@ -59,9 +98,12 @@
           <li>Sin tarjeta de crédito</li>
           <li>Soporte incluido</li>
         </ul>
+        <div class="plan-price"><span class="amount">GRATIS</span></div>
+        <div class="plan-support"><span class="inc">✅ Soporte incluido</span></div>
         <a href="https://wa.me/5493585404793?text=Hola!%20Quiero%20probar%20EcomerSoft%20Belleza" target="_blank" class="plan-cta">Empezar gratis</a>
       </div>
 
+      <!-- BÁSICO -->
       <div class="plan-card">
         <div class="plan-icon">📅</div>
         <div class="plan-name">Básico</div>
@@ -70,12 +112,15 @@
         <ul class="plan-features">
           <li>Sistema completo</li>
           <li>Activación por serial</li>
-          <li>Soporte técnico</li>
+          <li>Soporte técnico incluido</li>
           <li>Actualizaciones incluidas</li>
         </ul>
-        <a href="https://wa.me/5493585404793?text=Hola!%20Me%20interesa%20EcomerSoft%20Belleza%20plan%2030%20d%C3%ADas" target="_blank" class="plan-cta">Consultar precio</a>
+        <div class="plan-price"><span class="amount">$50.200</span></div>
+        <div class="plan-support"><span class="inc">✅ Soporte incluido</span></div>
+        <a href="https://wa.me/5493585404793?text=Hola!%20Me%20interesa%20EcomerSoft%20Belleza%20plan%20B%C3%A1sico%2030%20d%C3%ADas" target="_blank" class="plan-cta">Consultar formas de pago</a>
       </div>
 
+      <!-- ESTÁNDAR -->
       <div class="plan-card">
         <div class="plan-icon">🗓️</div>
         <div class="plan-name">Estándar</div>
@@ -87,9 +132,15 @@
           <li>Soporte técnico</li>
           <li>Actualizaciones incluidas</li>
         </ul>
-        <a href="https://wa.me/5493585404793?text=Hola!%20Me%20interesa%20EcomerSoft%20Belleza%20plan%2060%20d%C3%ADas" target="_blank" class="plan-cta">Consultar precio</a>
+        <div class="plan-price"><span class="amount">$72.600</span></div>
+        <div class="plan-support">
+          ➕ Soporte $25.000/mes
+          <span class="note">* precio puede variar</span>
+        </div>
+        <a href="https://wa.me/5493585404793?text=Hola!%20Me%20interesa%20EcomerSoft%20Belleza%20plan%20Est%C3%A1ndar%2060%20d%C3%ADas" target="_blank" class="plan-cta">Consultar formas de pago</a>
       </div>
 
+      <!-- AVANZADO -->
       <div class="plan-card">
         <div class="plan-icon">📆</div>
         <div class="plan-name">Avanzado</div>
@@ -101,9 +152,15 @@
           <li>Soporte técnico</li>
           <li>Actualizaciones incluidas</li>
         </ul>
-        <a href="https://wa.me/5493585404793?text=Hola!%20Me%20interesa%20EcomerSoft%20Belleza%20plan%20120%20d%C3%ADas" target="_blank" class="plan-cta">Consultar precio</a>
+        <div class="plan-price"><span class="amount">$106.800</span></div>
+        <div class="plan-support">
+          ➕ Soporte $25.000/mes
+          <span class="note">* precio puede variar</span>
+        </div>
+        <a href="https://wa.me/5493585404793?text=Hola!%20Me%20interesa%20EcomerSoft%20Belleza%20plan%20Avanzado%20120%20d%C3%ADas" target="_blank" class="plan-cta">Consultar formas de pago</a>
       </div>
 
+      <!-- ANUAL -->
       <div class="plan-card">
         <div class="plan-icon">⭐</div>
         <div class="plan-name">Anual</div>
@@ -115,9 +172,15 @@
           <li>Soporte técnico prioritario</li>
           <li>Actualizaciones incluidas</li>
         </ul>
-        <a href="https://wa.me/5493585404793?text=Hola!%20Me%20interesa%20EcomerSoft%20Belleza%20plan%20Anual" target="_blank" class="plan-cta">Consultar precio</a>
+        <div class="plan-price"><span class="amount">$196.000</span></div>
+        <div class="plan-support">
+          ➕ Soporte $25.000/mes
+          <span class="note">* precio puede variar</span>
+        </div>
+        <a href="https://wa.me/5493585404793?text=Hola!%20Me%20interesa%20EcomerSoft%20Belleza%20plan%20Anual" target="_blank" class="plan-cta">Consultar formas de pago</a>
       </div>
 
+      <!-- FULL -->
       <div class="plan-card full">
         <div class="plan-badge">✦ Recomendado</div>
         <div class="plan-icon">♾️</div>
@@ -131,7 +194,12 @@
           <li>Todas las actualizaciones</li>
           <li>Sin vencimiento</li>
         </ul>
-        <a href="https://wa.me/5493585404793?text=Hola!%20Me%20interesa%20la%20licencia%20FULL%20de%20EcomerSoft%20Belleza" target="_blank" class="plan-cta">Consultar precio</a>
+        <div class="plan-price"><span class="amount">$326.000</span></div>
+        <div class="plan-support">
+          ➕ Soporte $28.000/mes
+          <span class="note">* precio puede variar</span>
+        </div>
+        <a href="https://wa.me/5493585404793?text=Hola!%20Me%20interesa%20la%20licencia%20FULL%20de%20EcomerSoft%20Belleza" target="_blank" class="plan-cta">Consultar formas de pago</a>
       </div>
 
     </div>
