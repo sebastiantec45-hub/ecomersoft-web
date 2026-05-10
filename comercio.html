@@ -1,11 +1,22 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EcomerSoft Comercio · Sistema para Comercios</title>
+  <title>EcomerSoft Belleza · Sistema para Salones</title>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .plan-price { text-align:center; margin:10px 0 6px; }
+    .plan-price .amount { font-family:'Cormorant Garamond',serif; font-size:32px; font-weight:700; color:var(--white); line-height:1; display:block; }
+    .plan-card.trial .plan-price .amount { color:#69F0AE; font-size:28px; }
+    .plan-card.full .plan-price .amount { color:var(--primary-lt); }
+    .plan-support { font-size:11px; color:var(--muted); text-align:center; margin-bottom:4px; line-height:1.5; }
+    .plan-support .inc { color:#69F0AE; }
+    .plan-support .note { font-size:9.5px; color:rgba(144,202,249,.35); font-style:italic; display:block; margin-top:2px; }
+    .plan-card.full .plan-support { color:#9dd5ce; }
+  </style>
 </head>
 <body>
 
@@ -25,15 +36,15 @@
 
   <section class="hero">
     <div class="hero-glow"></div>
-    <div class="hero-badge">🏪 EcomerSoft Comercio</div>
-    <h1>Tu comercio,<br><em>siempre organizado</em></h1>
-    <p>Sistema de punto de venta y gestión completa para comercios minoristas. Rápido, confiable y sin complicaciones.</p>
+    <div class="hero-badge">💅 EcomerSoft Belleza</div>
+    <h1>Tu salón,<br><em>bajo control total</em></h1>
+    <p>Sistema de gestión comercial diseñado para peluquerías y salones de belleza. Simple, potente y listo para usar.</p>
   </section>
 
   <div class="features-strip">
-    <div class="feat-pill"><span class="dot"></span> Punto de venta ágil</div>
-    <div class="feat-pill"><span class="dot"></span> Control de stock</div>
-    <div class="feat-pill"><span class="dot"></span> Proveedores y compras</div>
+    <div class="feat-pill"><span class="dot"></span> Productos y stock</div>
+    <div class="feat-pill"><span class="dot"></span> Caja rápida</div>
+    <div class="feat-pill"><span class="dot"></span> Agenda y turnos</div>
     <div class="feat-pill"><span class="dot"></span> Clientes y cuenta corriente</div>
     <div class="feat-pill"><span class="dot"></span> Códigos de barra</div>
     <div class="feat-pill"><span class="dot"></span> Informes y estadísticas</div>
@@ -43,7 +54,7 @@
   <section class="plans-section">
     <div class="section-label"><span>Planes</span></div>
     <h2 class="section-title">Elegí el plan ideal</h2>
-    <p class="section-sub">Todos los planes incluyen el sistema completo. Consultanos por precios y medios de pago.</p>
+    <p class="section-sub">Todos los planes incluyen el sistema completo. Consultanos por formas de pago.</p>
 
     <div class="plans-grid">
 
@@ -59,7 +70,9 @@
           <li>Sin tarjeta de crédito</li>
           <li>Soporte incluido</li>
         </ul>
-        <a href="https://wa.me/5493585404793?text=Hola!%20Quiero%20probar%20EcomerSoft%20Comercio" target="_blank" class="plan-cta">Empezar gratis</a>
+        <div class="plan-price"><span class="amount">GRATIS</span></div>
+        <div class="plan-support"><span class="inc">✅ Soporte incluido</span></div>
+        <a href="https://wa.me/5493585404793?text=Hola!%20Quiero%20probar%20EcomerSoft%20Belleza" target="_blank" class="plan-cta">Empezar gratis</a>
       </div>
 
       <div class="plan-card">
@@ -70,10 +83,12 @@
         <ul class="plan-features">
           <li>Sistema completo</li>
           <li>Activación por serial</li>
-          <li>Soporte técnico</li>
+          <li>Soporte técnico incluido</li>
           <li>Actualizaciones incluidas</li>
         </ul>
-        <a href="https://wa.me/5493585404793?text=Hola!%20Me%20interesa%20EcomerSoft%20Comercio%20plan%2030%20d%C3%ADas" target="_blank" class="plan-cta">Consultar precio</a>
+        <div class="plan-price"><span class="amount">$50.200</span></div>
+        <div class="plan-support"><span class="inc">✅ Soporte incluido</span></div>
+        <a href="https://wa.me/5493585404793?text=Hola!%20Me%20interesa%20EcomerSoft%20Belleza%20plan%20B%C3%A1sico%2030%20d%C3%ADas" target="_blank" class="plan-cta">Consultar formas de pago</a>
       </div>
 
       <div class="plan-card">
@@ -87,7 +102,9 @@
           <li>Soporte técnico</li>
           <li>Actualizaciones incluidas</li>
         </ul>
-        <a href="https://wa.me/5493585404793?text=Hola!%20Me%20interesa%20EcomerSoft%20Comercio%20plan%2060%20d%C3%ADas" target="_blank" class="plan-cta">Consultar precio</a>
+        <div class="plan-price"><span class="amount">$72.600</span></div>
+        <div class="plan-support">➕ Soporte $25.000/mes<span class="note">* precio puede variar</span></div>
+        <a href="https://wa.me/5493585404793?text=Hola!%20Me%20interesa%20EcomerSoft%20Belleza%20plan%20Est%C3%A1ndar%2060%20d%C3%ADas" target="_blank" class="plan-cta">Consultar formas de pago</a>
       </div>
 
       <div class="plan-card">
@@ -101,7 +118,9 @@
           <li>Soporte técnico</li>
           <li>Actualizaciones incluidas</li>
         </ul>
-        <a href="https://wa.me/5493585404793?text=Hola!%20Me%20interesa%20EcomerSoft%20Comercio%20plan%20120%20d%C3%ADas" target="_blank" class="plan-cta">Consultar precio</a>
+        <div class="plan-price"><span class="amount">$106.800</span></div>
+        <div class="plan-support">➕ Soporte $25.000/mes<span class="note">* precio puede variar</span></div>
+        <a href="https://wa.me/5493585404793?text=Hola!%20Me%20interesa%20EcomerSoft%20Belleza%20plan%20Avanzado%20120%20d%C3%ADas" target="_blank" class="plan-cta">Consultar formas de pago</a>
       </div>
 
       <div class="plan-card">
@@ -115,7 +134,9 @@
           <li>Soporte técnico prioritario</li>
           <li>Actualizaciones incluidas</li>
         </ul>
-        <a href="https://wa.me/5493585404793?text=Hola!%20Me%20interesa%20EcomerSoft%20Comercio%20plan%20Anual" target="_blank" class="plan-cta">Consultar precio</a>
+        <div class="plan-price"><span class="amount">$196.000</span></div>
+        <div class="plan-support">➕ Soporte $25.000/mes<span class="note">* precio puede variar</span></div>
+        <a href="https://wa.me/5493585404793?text=Hola!%20Me%20interesa%20EcomerSoft%20Belleza%20plan%20Anual" target="_blank" class="plan-cta">Consultar formas de pago</a>
       </div>
 
       <div class="plan-card full">
@@ -131,7 +152,9 @@
           <li>Todas las actualizaciones</li>
           <li>Sin vencimiento</li>
         </ul>
-        <a href="https://wa.me/5493585404793?text=Hola!%20Me%20interesa%20la%20licencia%20FULL%20de%20EcomerSoft%20Comercio" target="_blank" class="plan-cta">Consultar precio</a>
+        <div class="plan-price"><span class="amount">$326.000</span></div>
+        <div class="plan-support">➕ Soporte $28.000/mes<span class="note">* precio puede variar</span></div>
+        <a href="https://wa.me/5493585404793?text=Hola!%20Me%20interesa%20la%20licencia%20FULL%20de%20EcomerSoft%20Belleza" target="_blank" class="plan-cta">Consultar formas de pago</a>
       </div>
 
     </div>
@@ -162,7 +185,7 @@
         <div class="hours">Siempre disponible</div>
       </div>
     </div>
-    <a href="https://wa.me/5493585404793?text=Hola!%20Quiero%20saber%20m%C3%A1s%20sobre%20EcomerSoft%20Comercio" target="_blank" class="btn-wa">
+    <a href="https://wa.me/5493585404793?text=Hola!%20Quiero%20saber%20m%C3%A1s%20sobre%20EcomerSoft%20Belleza" target="_blank" class="btn-wa">
       <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
       Escribinos por WhatsApp
     </a>
@@ -171,6 +194,18 @@
   <footer>
     © 2026 <span>EcomerSoft</span> · Sistemas de Gestión Comercial · Todos los derechos reservados
   </footer>
+
+  <!-- WhatsApp flotante -->
+  <a href="https://wa.me/5493585404793?text=Hola!%20Quiero%20saber%20m%C3%A1s%20sobre%20EcomerSoft%20Belleza"
+     target="_blank"
+     style="position:fixed;bottom:28px;right:28px;width:58px;height:58px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 24px rgba(37,211,102,.45);z-index:999;transition:transform .2s,box-shadow .2s;"
+     onmouseover="this.style.transform='scale(1.1)';this.style.boxShadow='0 8px 32px rgba(37,211,102,.6)'"
+     onmouseout="this.style.transform='scale(1)';this.style.boxShadow='0 6px 24px rgba(37,211,102,.45)'"
+     title="Escribinos por WhatsApp">
+    <svg width="30" height="30" viewBox="0 0 24 24" fill="white">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
 
 </body>
 </html>
