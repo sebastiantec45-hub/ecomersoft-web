@@ -1,14 +1,14 @@
 :root {
-  --bg:         #08191a;
-  --bg2:        #0d2224;
-  --card:       #112628;
-  --border:     #1e4245;
-  --primary:    #14B8A6;
-  --primary-lt: #5EEAD4;
-  --primary-dk: #0d8a7a;
+  --bg:         #080f1f;
+  --bg2:        #0d1a35;
+  --card:       #0f2040;
+  --border:     #1a3a6e;
+  --primary:    #1565C0;
+  --primary-lt: #42A5F5;
+  --primary-dk: #0D47A1;
   --gold:       #e2c97e;
-  --text:       #e8f4f4;
-  --muted:      #7aadaa;
+  --text:       #ddeeff;
+  --muted:      #7aaad4;
   --white:      #ffffff;
 }
 
@@ -185,7 +185,7 @@ nav {
   border-color: var(--primary);
   box-shadow: 0 12px 40px rgba(20,184,166,.12);
 }
-.plan-card.trial { border-style: dashed; border-color: #1e4245; background: rgba(17,38,40,.6); }
+.plan-card.trial { border-style: dashed; border-color: #1a3a6e; background: rgba(17,38,40,.6); }
 .plan-card.trial:hover { border-color: var(--primary); border-style: solid; }
 .plan-card.full {
   background: linear-gradient(145deg, #0d3535, #112e30);
